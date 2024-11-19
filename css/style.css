@@ -13,7 +13,7 @@
 ------------------*/
 
 .container {
-    max-width: 1364px;
+    max-width: 1200px;
     padding: 30px 24px 70px 24px;
     margin-left: auto;
     margin-right: auto;
@@ -74,9 +74,9 @@ h3 {
     flex-wrap: wrap;
 }
 
-.col {
+/*.col {
     flex-grow: 1;
-}
+}*/
 
 .col-youtube, .col-overview {
     width: 100%;
@@ -84,6 +84,11 @@ h3 {
 
 .img-fluid {
     max-width: 100%;
+}
+
+.col-overview {
+    padding: 44px 38px;
+    background-color: white;
 }
 
 .col-overview h4 {
@@ -101,6 +106,30 @@ h3 {
 .overview-bold {
     font-weight: bold;
 }
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    margin: 36px 0px;
+}
+
+.social-media a {
+    padding: 10px 16px;
+    border-radius: 50px;
+    background-color: white;
+    text-decoration: none;
+    color: #1A77F3; 
+}
+
+.social-media a span {
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.hidden-tablet {
+    display: none;
+}
 /*----------------
     RESPONSIVE
 ------------------*/
@@ -116,13 +145,34 @@ h3 {
     }
 }
 
+/* >=641px & <=1019px */
+@media screen and (min-width: 641px) and (max-width: 1019px) {
+    /*.col-overview ul {
+        display: flex;
+    }*/
+
+    .social-media a {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+}
+
 /* >=1020px */
 @media screen and (min-width: 1020px) {
     .col-youtube {
-        width: 70%;
+        width: 60%;
     }
 
     .col-overview {
-        width: 30%;
+        width: 40%;
+    }
+
+    .hidden-tablet {
+        display: inline;
+    }
+
+    .social-media a {
+        padding-left: 45px;
+        padding-right: 45px
     }
 }
