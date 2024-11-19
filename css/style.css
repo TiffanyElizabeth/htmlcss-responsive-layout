@@ -164,8 +164,6 @@ footer {
     line-height: 1.8;
 }
 
-
-
 .footer-2 ul {
     display: flex;
     list-style: none;
@@ -227,11 +225,10 @@ footer {
         padding-right: 45px
     }
 
-    /*.col-img {
-        width: 70%;
+    footer {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
     }
 
-    .col-description {
-        width: 30%;
-    }*/
 }
