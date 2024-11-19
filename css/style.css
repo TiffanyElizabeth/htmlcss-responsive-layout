@@ -1,15 +1,33 @@
 /*----------------
     RESET
 ------------------*/
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 /*----------------
     GENERAL
 ------------------*/
 
+.container {
+    max-width: 1364px;
+    padding: 30px 24px 70px 24px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lavender;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f6f5f3;
+}
+
+.hidden-mobile {
+    display: none;
+}
 
 /*----------------
     HEADER
@@ -31,9 +49,58 @@ h1 {
     font-size: 44px;
     text-transform: uppercase;
     text-shadow: 1px 1px 1px #333;
-
 }
 
+/*----------------
+    MAIN
+------------------*/
+
+h2 {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: grey;
+    padding-bottom: 20px;
+}
+
+h3 {
+    font-size: 30px;
+    color: #4e3969;
+    padding-bottom: 30px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex-grow: 1;
+}
+
+.col-youtube, .col-overview {
+    width: 100%;
+}
+
+.img-fluid {
+    max-width: 100%;
+}
+
+.col-overview h4 {
+    font-size: 24px;
+    padding-bottom: 44px;
+}
+
+.col-overview ul {
+    list-style: none;
+    font-size: 22px;
+    line-height: 1.8;
+    font-weight: 300px;
+}
+
+.overview-bold {
+    font-weight: bold;
+}
 /*----------------
     RESPONSIVE
 ------------------*/
@@ -43,6 +110,19 @@ h1 {
     header {
         text-align: left;
     }
+
+    .hidden-mobile {
+        display: inline;
+    }
 }
 
 /* >=1020px */
+@media screen and (min-width: 1020px) {
+    .col-youtube {
+        width: 70%;
+    }
+
+    .col-overview {
+        width: 30%;
+    }
+}
