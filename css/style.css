@@ -9,3 +9,40 @@
 /*----------------
     GENERAL
 ------------------*/
+
+
+/*----------------
+    HEADER
+------------------*/
+
+header {
+    background-color: white;
+    color: #ff9614; 
+    text-align: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding: 14px;
+}
+
+h1 {    
+    font-family: "Nerko One", cursive;
+    font-size: 44px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #333;
+
+}
+
+/*----------------
+    RESPONSIVE
+------------------*/
+
+/* >=641px */
+@media screen and (min-width: 641px) {
+    header {
+        text-align: left;
+    }
+}
+
+/* >=1020px */
