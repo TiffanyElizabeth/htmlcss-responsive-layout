@@ -17,7 +17,7 @@
     padding: 30px 24px 70px 24px;
     margin-left: auto;
     margin-right: auto;
-    background-color: lavender;
+    background-color: #F6F5F3;
 }
 
 body {
@@ -151,6 +151,32 @@ hr {
     display: block;
 }
 
+/*----------------
+    FOOTER
+------------------*/
+
+footer {
+    background-color: #7C69A4;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    padding: 30px 16px;
+    line-height: 1.8;
+}
+
+
+
+.footer-2 ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 24px;
+    padding-top: 4px;
+}
+
+.footer-2 a {
+    color: white;
+}
 /*----------------
     RESPONSIVE
 ------------------*/
