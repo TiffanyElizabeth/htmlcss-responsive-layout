@@ -74,10 +74,6 @@ h3 {
     flex-wrap: wrap;
 }
 
-/*.col {
-    flex-grow: 1;
-}*/
-
 .col-youtube, .col-overview {
     width: 100%;
 }
@@ -136,10 +132,25 @@ h3 {
 }
 
 h5 {
-    font-size: 30px;
+    font-size: 36px;
     font-weight: 300;
     text-transform: uppercase;
 }
+
+hr {
+    font-weight: bold;
+    width: 100px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    color: orange;
+}
+
+.img-tiramisu {
+    width: 300px;
+    margin: auto;
+    display: block;
+}
+
 /*----------------
     RESPONSIVE
 ------------------*/
@@ -152,6 +163,10 @@ h5 {
 
     .hidden-mobile {
         display: inline;
+    }
+
+    .img-tiramisu {
+        float: left;
     }
 }
 
@@ -185,4 +200,12 @@ h5 {
         padding-left: 45px;
         padding-right: 45px
     }
+
+    /*.col-img {
+        width: 70%;
+    }
+
+    .col-description {
+        width: 30%;
+    }*/
 }
